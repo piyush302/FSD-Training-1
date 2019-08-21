@@ -1,0 +1,20 @@
+<!-- 15. Write a program in JS to highlight the bold words of a paragraph in HTML, on click of a button (Hint: You can use getElementsByTagName()) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Highlight</title>
+</head>
+<body>
+	My name is <b>Piyush Darshan</b>.Im in <b>FSD</b> batch.
+	<button onclick="heigh()">Highlight</button>
+	<script type="text/javascript">
+		 function heigh(){
+		 	var v1=document.getElementsByTagName('b');
+		 	for(i=0;i<v1.length;i++){
+		 	v1[i].style.background="#FFFC00";
+		 }
+		 }
+	</script>
+</body>
+</html>
